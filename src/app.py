@@ -4,7 +4,7 @@ from dash import dcc, html, Input, Output
 import plotly.graph_objects as go
 
 # Load the dataset
-df = pd.read_csv('./ProcessedTweets.csv')
+df = pd.read_csv('https://raw.githubusercontent.com/archamehta/Twitter/main/ProcessedTweets.csv')
 
 # Convert 'Month' column to datetime format
 df['Month'] = pd.to_datetime(df['Month'], format='%B')
